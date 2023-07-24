@@ -38,11 +38,11 @@ int print_pointer(va_list types, char buffer[],
 		length++;
 	}
 
-	if ((flags & M_ZERO) && !(flags & M_MINUS))
+	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd = '0';
-	if (flags & M_PLUS)
+	if (flags & F_PLUS)
 		extra_c = '+', length++;
-	else if (flags & M_SPACE)
+	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
 
 	ind++;

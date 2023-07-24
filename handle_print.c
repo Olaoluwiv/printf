@@ -1,4 +1,4 @@
-#iinclude "main.h"
+#include "main.h"
 /**
  * handle_print - Prints all argument based on its type
  * @fmt: Format all  string in which to print the arguments.
